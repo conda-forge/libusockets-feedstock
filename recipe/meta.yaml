@@ -1,5 +1,5 @@
 {% set name = "libusockets" %}
-{% set version = "0.8.6" %}
+{% set version = "0.8.7" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   - url: https://github.com/uNetworking/uSockets/archive/refs/tags/v{{ version }}.tar.gz
-    sha256: 16eba133dd33eade2f5f8dd87612c04b5dd711066e0471c60d641a2f6a988f16
+    sha256: 920313a2ae42bbda17bded6fc83b3df635af24cc9abefc87905ad60fdc596edf
     patches:
       - use_libuv.patch
       - disable_ssl_tests.patch
